@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+            
+            .image{
+                border:5px double rgb(138, 136, 136);
+                z-index:-6;
+                margin:5px;
+            }
+            .left{    
+                margin-right:20px;
+                float:left;
+            }
+            .right{
+                margin-left:20px;
+                float:right;
+                right:-14px;
+            }
+            #header {
+                background-color:lightgreen;
+                border-bottom:solid 2px black;
+                position:relative;
+                top:-13px;
+                z-index:5;
+            }
+            p{
+                z-index:10;
+                color:blue;
+                font-weight:bold;
+            }
+            ul{
+                z-index:8;
+                color:blue;
+            }
+            ol{
+                z-index:8;
+                color:blue;
+            }
+            h1{
+                color:white;
+                z-index:10;
+            }
+            h3{
+                color:white;
+                z-index:24;
+            }
+            h4{
+                z-index:18;
+            }
+            #bkg{
+                position:absolute;
+                z-index:-1;
+                top:27px;
+                overflow:hidden;
+                height:538px;
+                left:0px;
+            }
+            #box1{
+                background-color:rgb(150, 81, 150);
+                width:16em;
+                margin:0px;
+                position:absolute;
+                right:-5px;
+                top:142px;
+                padding-left:5px;
+                border:5px ridge rgb(87, 0, 87);
+                z-index:5;
+                }
+            #box2{
+                background-color:rgb(150, 81, 150);
+                width:16em;
+                margin:0px;
+                position:absolute;
+                left:4px;
+                top:311px;
+                padding-left:5px;
+                border:5px ridge rgb(87, 0, 87);
+                z-index:4;
+            }
+            #nf{
+                position:relative;
+                top:11em;
+                z-index:5;
+            }
+            #every{
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h4 id="header">Travel to Canada | <a href="#adv">Advantages</a> | <a href="#sts">Sights to See</a></h4>
+        <h1>Travelin' to Canada, Eh?</h1>
+        
+        <img src="https://www.kasandbox.org/programming-images/landscapes/lake.png" width="200px" class="image left" alt="Image of a lake in a valley.">
+        <h3 id="adv">Advantages to Canada</h3>
+        <div id="box1">
+        <p>Come to Canada! There are many advantages to visiting Canada including:</p>
+        
+        <ul class="list">
+             <li>Canada contains 20% of the world's total freshwater</li>
+             <li>Although closley related to the USA, Canada has a unique history</li>
+        </ul>
+        </div>
+        <img src="https://www.kasandbox.org/programming-images/landscapes/waterfall_niagara-falls.png" width="200px" class="image right" id="nf" alt="Image of Niagra Falls">
+        <h3 id="sts">Sights Worth Seeing</h3>
+        <div id="box2">
+        <p> In Canada, there are many <br>different places to visit, but the most <br>beautiful places of all are in reigonal, <br>provincial, and national parks. One <br>can find these parks in <span id="every">every</span> <br>province. The three most beautiful are:</p>
+        <ol>
+            <li>Niagra Falls</li>
+            <li>The Rockies</li>
+            <li>Cape Breton Highlands</li>
+        </ol>
+        </div>
+        <img src="https://www.kasandbox.org/programming-images/seasonal/fireworks-over-harbor.png" id="bkg">
+    </body>
+</html>
